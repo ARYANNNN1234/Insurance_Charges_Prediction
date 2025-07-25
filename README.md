@@ -1,4 +1,4 @@
- Insurance Charges Prediction
+💰 Insurance Charges Prediction
 This repository contains a machine learning project focused on predicting medical insurance charges based on various personal attributes. The project involves Exploratory Data Analysis (EDA), data preprocessing, feature engineering, model training, and deployment of a simple web application using Streamlit.
 
 Table of Contents
@@ -81,11 +81,7 @@ Chi-squared Test: Used for categorical features to assess their independence fro
 
 Model Training: A LinearRegression model from scikit-learn was chosen for its interpretability and effectiveness for regression tasks.
 
-Model Evaluation: The model's performance was evaluated using R 
-2
-  (R-squared) and Adjusted R 
-2
-  metrics.
+Model Evaluation: The model's performance was evaluated using R2 (R-squared) and Adjusted R2 metrics.
 
 Model Persistence: The trained model, scaler, and feature column names were saved using joblib for later use in the Streamlit application.
 
@@ -94,17 +90,12 @@ The primary model used in this project is:
 
 Linear Regression: A simple yet powerful algorithm for modeling the relationship between a dependent variable and one or more independent variables by fitting a linear equation to the observed data.
 
-The model achieved an R 
-2
-  score of approximately 0.75 and an Adjusted R 
-2
-  score of 0.748, indicating that a significant portion of the variance in insurance charges can be explained by the selected features.
+The model achieved an R2 score of approximately 0.80 and an Adjusted R2 score of 0.80, indicating that a significant portion of the variance in insurance charges can be explained by the selected features.
 
 Project Structure
 .
 ├── insurance.csv             # The raw dataset
-├── insurance_prediction.ipynb # Jupyter Notebook with EDA, preprocessing, training
-├── app.py                    # Streamlit web application for prediction
+├── insurance_prediction.ipynb # Jupyter Notebook with EDA, preprocessing, training      
 ├── LinearRegression_insurance.pkl # Saved trained Linear Regression model
 ├── scaler_insurance.pkl      # Saved StandardScaler object
 ├── columns_insurance_fit.pkl # Saved list of feature column names used during training
@@ -117,6 +108,7 @@ Running the Jupyter Notebook
 Clone the repository:
 
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+(https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
 cd YOUR_REPO_NAME
 
 (Replace YOUR_USERNAME and YOUR_REPO_NAME with your actual GitHub details)
@@ -145,12 +137,6 @@ Running the Streamlit Application
 Ensure you have followed steps 1-3 from "Running the Jupyter Notebook" to set up your environment and install dependencies.
 
 Make sure the .pkl files are in the same directory as app.py.
-
-Run the Streamlit app:
-
-streamlit run app.py
-
-The application will open in your web browser, allowing you to input details and get real-time insurance charge predictions.
 
 Dependencies
 The following Python libraries are required to run this project. It's best practice to install specific versions to ensure reproducibility. You can generate a requirements.txt file using pip freeze > requirements.txt after installing them.
