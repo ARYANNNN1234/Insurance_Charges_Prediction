@@ -1,4 +1,6 @@
  Insurance Charges Prediction
+
+ 
 This repository contains a machine learning project focused on predicting medical insurance charges based on various personal attributes. The project involves Exploratory Data Analysis (EDA), data preprocessing, feature engineering, model training, and deployment of a simple web application using Streamlit.
 
 Table of Contents
